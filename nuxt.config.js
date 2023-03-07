@@ -7,7 +7,9 @@ export default defineNuxtConfig({
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
         bridge: true,
         useApiClient: true,
-        apiOptions: {},
+        apiOptions: {
+          region: "us",
+        },
       },
     ],
     '@nuxt/devtools',
