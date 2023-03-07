@@ -6,11 +6,11 @@
             </NuxtLink>
             <nav>
                 <ul>
-                    <li>
-                        <NuxtLink to="/pricing">Pricing</NuxtLink>
-                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 </template>
+
+<script setup>
+</script>

@@ -5,8 +5,6 @@ export default defineNuxtConfig({
       '@storyblok/nuxt',
       {
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-        bridge: true,
-        useApiClient: true,
         apiOptions: {
           region: "us",
         },
@@ -15,14 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@nuxt/image-edge'
   ],
-  nitro: {
-    prerender: {
-      routes: [ 
-        '/', 
-        '/phone-answering-service/' 
-      ]
-    }
-  },
   vite: {
     css: {
       preprocessorOptions: {
