@@ -2,7 +2,7 @@
     <header class="header">
         <div class="header__nav">
             <NuxtLink to="/">
-                <h1>VoiceNation</h1>
+                <nuxt-img src="global/main-logo.png" />
             </NuxtLink>
             <nav class="header_nav" aria-labelledby="primary-navigation">
                 <ul>

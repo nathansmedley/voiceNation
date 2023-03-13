@@ -1,17 +1,31 @@
 <template>
-    <div v-editable="blok">
-      <h3>
-        {{ blok.name }}
-      </h3>
-    </div>
+    <div
+      class="hero"
+      :class="`hero--${mode}`"
+    >
+    </div><!--hero-->
   </template>
    
-<script setup>
-  const storyblokApi = useStoryblokApi()
-  const { data } = await storyblokApi.get('cdn/stories/config', {
-    version: 'draft',
-  })
-    
-  const headerMenu = ref(null)
-  headerMenu.value = data.story.content.header_menu
+<script>
+  export default {
+    props: {
+      side: {
+        type: String,
+        default: 'dark',
+      },
+    }
+  }
 </script>
+
+<style lang="scss" scoped>
+.hero {
+
+  &--dark {
+
+    &__wrapper {
+      background:$navy;
+    }
+  }
+}
+
+</style>
