@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       },
     ],
     '@nuxt/devtools',
-    '@nuxt/image-edge'
+    '@nuxt/image-edge',
   ],
   vite: {
     css: {

@@ -1,12 +1,24 @@
 <template>
+    <navDefault />
+
     <heroHomepage
         mode="dark"
     >
-      <template slot="heroTitle">
-        We truly <span>personalize</span> how we answer your calls &amp; live chat
+      <template #heroTitle>
+        24/7 Virtual Receptionist & Live Chat delivered by US-based agents
       </template>
-      <template slot="heroText">
-        Unlike other providers, we don’t do scripts. We do relationships. Our awesome people, superpowered by technology, know your business and customers inside out so we can answer calls and chats exactly as if part of your team.
+      <template #heroText>
+        Have America’s best agents following your custom script to secure every business opportunity and provide great service for your customers.
+      </template>
+      <template #ctaText>
+        <Btn 
+          href="/pricing/" 
+          mode="dark" 
+          size="large" 
+          colour="blue"
+        >
+          See pricing and free trial
+        </Btn>
       </template>
     </heroHomepage>
 </template>
