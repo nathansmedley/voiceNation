@@ -4,11 +4,11 @@
     <heroHomepage
         mode="dark"
     >
-      <template #heroTitle>
-        24/7 Virtual Receptionist & Live Chat delivered by US-based agents
+      <template #heroTitle v-if="story.content.body[0].hero_homepage_title">
+        {{ story.content.body[0].hero_homepage_title }}
       </template>
-      <template #heroText>
-        Have America’s best agents following your custom script to secure every business opportunity and provide great service for your customers.
+      <template #heroText v-if="story.content.body[0].hero_homepage_text">
+        {{ story.content.body[0].hero_homepage_text }}
       </template>
       <template #ctaText>
         <Btn 
@@ -21,4 +21,18 @@
         </Btn>
       </template>
     </heroHomepage>
+
+
 </template>
+
+<script setup >
+const story = await useAsyncStoryblok("home", { version: "draft" });
+console.log(story);
+
+useHead({
+  title: 'My App',
+  meta: [
+    { name: 'description', content: 'My amazing site.' }
+  ],
+})
+</script>

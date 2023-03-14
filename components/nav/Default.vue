@@ -8,7 +8,7 @@
                 <ul class="header__nav__menu__wrapper">
                     <li class="header__nav__menu__wrapper__item">Solutions</li>
                     <li class="header__nav__menu__wrapper__item">Industries</li>
-                    <li class="header__nav__menu__wrapper__item">Pricing</li>
+                    <li class="header__nav__menu__wrapper__item"><NuxtLink to="pricing">Pricing</NuxtLink></li>
                     <li class="header__nav__menu__wrapper__item">Free Trial</li>
                     <li class="header__nav__menu__wrapper__item header__nav__menu__wrapper__item--online">833-456-789</li>
                 </ul>
